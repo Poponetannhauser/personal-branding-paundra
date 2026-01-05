@@ -3,8 +3,8 @@ import React from "react";
 const Navbar = () => {
 	const navItems = [
 		{ name: "Profile", href: "#profile", icon: "ph-user" },
-		{ name: "Projects", href: "#projects", icon: "ph-briefcase" },
 		{ name: "Skills", href: "#skills", icon: "ph-lightning" },
+		{ name: "Projects", href: "#projects", icon: "ph-briefcase" },
 		{ name: "Inspirations", href: "#inspirations", icon: "ph-lightbulb" },
 	];
 

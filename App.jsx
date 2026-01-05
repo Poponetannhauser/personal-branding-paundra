@@ -26,8 +26,8 @@ function App() {
 		<div className="bg-gray-50 text-gray-900 max-w-4xl mx-auto p-6 md:p-12">
 			<Navbar />
 			<ProfileSection />
-			<ProjectsSection />
 			<SkillsSection />
+			<ProjectsSection />
 			<InspirationsSection />
 			<Footer />
 		</div>
