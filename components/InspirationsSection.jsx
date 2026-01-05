@@ -118,7 +118,7 @@ export default function InspirationsSection() {
 							Life Motto
 						</h4>
 						<p className="text-white text-lg font-medium leading-tight italic">
-							""
+							"Tidak semua hari harus dimenangkan"
 						</p>
 					</div>
 					<i className="ph-fill ph-quotes absolute -bottom-4 -right-4 text-8xl text-white/5"></i>

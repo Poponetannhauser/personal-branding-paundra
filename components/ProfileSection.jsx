@@ -142,8 +142,7 @@ export default function ProfileSection() {
 							Recent Achievement
 						</h4>
 						<p className="text-white font-medium leading-tight">
-							Berhasil merombak struktur portfolio menjadi modular & berbasis
-							React.
+							Masih hidup
 						</p>
 					</div>
 					<div className="text-4xl text-white/20 group-hover:scale-125 transition-transform duration-700">
