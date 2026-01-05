@@ -3,275 +3,38 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portfolio - Personal Branding</title>
-		<link rel="stylesheet" href="style.css" /> 
+		<title>Paundra Asfa - Portfolio</title>
+		<meta
+			name="description"
+			content="Portfolio Paundra Asfa Ravikansya - Web Developer & Game Dev Enthusiast"
+		/>
+
+		<!-- Fonts & Icons -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+		<!-- Tailwind CSS (Vite will handle this better in production, but keeping CDN for now if you prefer) -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							sans: ["Space Grotesk", "sans-serif"],
+						},
+					},
+				},
+			};
+		</script>
 	</head>
 	<body>
-		<nav>
-			<div class="container">
-				<ul>
-					<li><a href="#profil">PROFIL</a></li>
-					<li><a href="#keahlian">KEAHLIAN</a></li>
-					<li><a href="#pengalaman">PENGALAMAN</a></li>
-					<li><a href="#inspirasi">INSPIRASI</a></li>
-				</ul>
-			</div>
-		</nav>
+		<!-- Main React root -->
+		<div id="root"></div>
 
-		<header>
-			<div class="container">
-				<div class="profile-photo">
-					<!-- Ganti src dengan URL foto Anda, atau hapus img tag untuk menampilkan icon -->
-					<img src="tampandanpemberani.png" alt="Profile Photo">
-				</div>
-				<h1>Paundra Asfa Ravikansya</h1>
-				<p>Just an ordinary developer</p>
-			</div>
-		</header>
-
-		<section id="profil" class="section">
-			<div class="container">
-				<div class="section-title">
-					<h2>Profil</h2>
-					<p>Who am I?</p>
-				</div>
-
-				<div class="profile-grid">
-					<div class="profile-box">
-						<div class="profile-info">
-							<div class="info-row">
-								<strong>Nama Lengkap</strong>
-								<span>Paundra Asfa Ravikansya</span>
-							</div>
-							<div class="info-row">
-								<strong>Email</strong>
-								<span>paundraexe@gmail.com</span>
-							</div>
-							<div class="info-row">
-								<strong>Telepon</strong>
-								<span>+62 818-0240-5240</span>
-							</div>
-							<div class="info-row">
-								<strong>Alamat</strong>
-								<span>Sleman, Daerah Istimewa Yogyakarta</span>
-							</div>
-							<div class="info-row">
-								<strong>Pendidikan</strong>
-								<span>Universitas AMIKOM Yogyakarta</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="profile-box">
-						<h3
-							style="
-								font-size: 1.2em;
-								color: #1a1a1a;
-								margin-bottom: 18px;
-								font-weight: 500;
-							"
-						>
-							Tentang Saya
-						</h3>
-						<p class="profile-about">
-                            Seorang mahasiswa informatika semester 7 yang ingin menjadi seorang game developer. 
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="keahlian" class="section">
-			<div class="container">
-				<div class="section-title">
-					<h2>Keahlian</h2>
-					<p>What can I do?</p>
-				</div>
-
-				<div class="skill-category">
-					<div class="skill-header">
-						<h3>Web Development</h3>
-						<span class="skill-badge">Main Focus</span>
-					</div>
-					<div class="skill-list">
-						<div class="skill-item">
-							<strong>Next.js</strong>
-							<span>Focus on Frontend Performance & SEO</span>
-						</div>
-						<div class="skill-item">
-							<strong>Laravel</strong>
-							<span>Robust Backend & API Development</span>
-						</div>
-						<div class="skill-item">
-							<strong>React.js</strong>
-							<span>Interactive UI Components</span>
-						</div>
-						<div class="skill-item">
-							<strong>Tailwind CSS</strong>
-							<span>Rapid UI Styling</span>
-						</div>
-						<div class="skill-item">
-							<strong>REST API Integration</strong>
-							<span>Connecting Next.js Frontend with Laravel Backend</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="skill-category">
-					<div class="skill-header">
-						<h3>Game Development</h3>
-						<span class="skill-badge">Passion</span>
-					</div>
-					<div class="skill-list">
-						<div class="skill-item">
-							<strong>Unity (C#)</strong>
-							<span>Game Logic & Mechanics Implementation</span>
-						</div>
-						<div class="skill-item">
-							<strong>Game Design Theory</strong>
-							<span>Level Design & Mechanics Analysis</span>
-						</div>
-						<div class="skill-item">
-							<strong>2D Asset Implementation</strong>
-							<span>Using Aseprite for asset modification & integration</span>
-						</div>
-						<div class="skill-item">
-							<strong>Interactive Systems</strong>
-							<span>State Management & User Input Handling</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="skill-category">
-					<div class="skill-header">
-						<h3>Tools & Fundamentals</h3>
-					</div>
-					<div class="skill-list">
-						<div class="skill-item">
-							<strong>Python</strong>
-							<span>Basic Data Analysis & Automation</span>
-						</div>
-						<div class="skill-item">
-							<strong>Data Mining Concepts</strong>
-							<span>Understanding patterns & algorithms</span>
-						</div>
-						<div class="skill-item">
-							<strong>Git & GitHub</strong>
-							<span>Version Control</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="pengalaman" class="section">
-			<div class="container">
-				<div class="section-title">
-					<h2>Pengalaman</h2>
-					<p>My journey and projects</p>
-				</div>
-
-				<div class="experience-list">
-					<div class="exp-item">
-						<div class="exp-meta">
-							<span class="exp-badge">Live</span>
-							<div class="exp-role">Frontend Developer</div>
-							<div class="exp-tech">Next.js · Tailwind</div>
-						</div>
-						<div class="exp-content">
-							<h3>Mujur Jaya - Company Profile</h3>
-							<p>
-								Merancang dan membangun Frontend untuk profil digital pabrik sohun 'Mujur Jaya'. Berkolaborasi dengan tim
-								untuk menampilkan informasi kontak dan profil perusahaan
-								secara dinamis, memastikan aksesibilitas informasi bagi mitra
-								bisnis.
-							</p>
-						</div>
-					</div>  
-
-					<div class="exp-item">
-						<div class="exp-meta">
-							<span class="exp-badge">In Development</span>
-							<div class="exp-role">Frontend Developer</div>
-							<div class="exp-tech">Next.js · Laravel</div>
-						</div>
-						<div class="exp-content">
-							<h3>June Label - Hijab E-Commerce</h3>
-							<p>
-								Pengembangan platform E-Commerce untuk brand fashion muslim.
-								Fokus saat ini adalah perancangan arsitektur Frontend yang
-								modern dan responsif untuk halaman utama (Homepage) serta
-								perencanaan integrasi fitur keranjang belanja (Add to Cart) yang
-								kompleks.
-							</p>
-						</div>
-					</div>
-
-					<div class="exp-item">
-						<div class="exp-meta">
-							<span class="exp-badge">Prototype</span>
-							<div class="exp-role">Game Programmer</div>
-							<div class="exp-tech">Unity · C# · Aseprite</div>
-						</div>
-						<div class="exp-content">
-							<h3>Guardian of the Forest - Action Tower Defense</h3>
-							<p>
-								Prototype game strategi hybrid yang
-								menggabungkan elemen Tower Defense dengan Character Movement.
-								Mengimplementasikan sistem peletakan tower
-								berbasis dynamic placement dan manajemen wave
-								musuh.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="inspirasi" class="section">
-			<div class="container">
-				<div class="section-title">
-					<h2>Tokoh Inspiratif</h2>
-					<p>My inspiration</p>
-				</div>
-
-				<div class="inspiration-grid">
-					<div class="insp-card">
-						<h3>Windah Basudara</h3>
-						<div class="insp-title">Content Creator & Influencer</div>
-						<p class="insp-quote">
-							"Mimpi tidak ada yang gagal, hanya ada mimpi yang tertunda. Jika kamu gagal, ciptakan mimpi yang lain"
-						</p>
-						<p class="insp-desc">
-							Inspirasi saya tentang Totalitas dan Profesionalisme. Saya
-							mengagumi keberaniannya saat meninggalkan zona nyaman (pekerjaan
-							hotel) dan mempertaruhkan segalanya demi mengejar mimpinya menjadi youtuber gaming.
-							Kemampuannya memisahkan persona hiburan dengan kepribadian asli
-							yang serius dan pekerja keras mengajarkan saya tentang manajemen
-							diri yang baik.
-						</p>
-					</div>
-
-					<div class="insp-card">
-						<h3>Sherlock Holmes</h3>
-						<div class="insp-title">
-							Detective (Fictional Character by Sir Arthur Conan Doyle)
-						</div>
-						<p class="insp-quote">
-							"To a great mind, nothing is little."
-						</p>
-						<p class="insp-desc">
-							Inspirasi saya dalam berpikir logis. Saya mengagumi seni deduksi Holmes yang mampu menarik kesimpulan besar dari detail-detail kecil yang sering terabaikan. Pola pikir ini saya terapkan dalam kehidupan sehari-hari saya, terutama saat debugging dan memecahkan masalah algoritma.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer>
-			<div class="container">
-				<p>&copy; 2026 Paundra Asfa Ravikansya. All rights reserved.</p>
-			</div>
-		</footer>
+		<!-- Main Entry Point -->
+		<script type="module" src="/main.jsx"></script>
 	</body>
 </html>
